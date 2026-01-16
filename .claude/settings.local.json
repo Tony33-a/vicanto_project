@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run migrate:rollback:*)",
+      "Bash(npm run migrate:*)",
+      "Bash(npm install:*)",
+      "Bash(npx knex:*)",
+      "Bash(psql:*)",
+      "Bash(node verify_database.js:*)",
+      "Bash(node:*)",
+      "Bash(tasklist:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm start)",
+      "Bash(timeout /t 3)",
+      "Bash(dir:*)",
+      "Bash(curl:*)",
+      "Bash(timeout:*)",
+      "Bash(ipconfig:*)"
+    ]
+  }
+}

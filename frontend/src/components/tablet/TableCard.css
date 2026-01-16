@@ -1,0 +1,91 @@
+.table-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 140px;
+  gap: 6px;
+}
+
+.table-card:active {
+  transform: scale(0.97);
+}
+
+/* Stato: Libero */
+.table-card-free {
+  background: #374151;
+  color: #9ca3af;
+}
+
+.table-card-free:hover {
+  background: #4b5563;
+}
+
+.table-card-free .table-number {
+  color: #d1d5db;
+}
+
+.table-card-free .table-status-label {
+  color: #9ca3af;
+}
+
+/* Stato: In Attesa (Pending) */
+.table-card-pending {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+}
+
+.table-card-pending:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%);
+}
+
+.table-card-pending .table-status-label {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+/* Stato: Occupato */
+.table-card-occupied {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+}
+
+.table-card-occupied:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%);
+}
+
+.table-card-occupied .table-status-label {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Elementi interni */
+.table-number {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.table-status-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+.table-covers {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.table-total {
+  font-size: 16px;
+  font-weight: 700;
+}
